@@ -257,7 +257,7 @@ class Mock implements MockInterface
     // start method allows
     /**
      * @param mixed $something  String method name or map of method => return
-     * @return self|ExpectationInterface|Expectation|HigherOrderMessage
+     * @return static|ExpectationInterface|Expectation|HigherOrderMessage
      */
     public function allows($something = [])
     {
@@ -279,9 +279,8 @@ class Mock implements MockInterface
     // end method allows
     // start method expects
     /**
-        /**
     * @param mixed $something  String method name (optional)
-     * @return ExpectationInterface|Expectation|ExpectsHigherOrderMessage
+    * @return static|ExpectationInterface|Expectation|ExpectsHigherOrderMessage
     */
     public function expects($something = null)
     {

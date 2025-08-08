@@ -15,14 +15,14 @@ interface MockInterface extends LegacyMockInterface
     /**
      * @param mixed $something String method name or map of method => return
      *
-     * @return Expectation|ExpectationInterface|HigherOrderMessage|self
+     * @return Expectation|ExpectationInterface|HigherOrderMessage|static
      */
     public function allows($something = []);
 
     /**
      * @param mixed $something String method name (optional)
      *
-     * @return Expectation|ExpectationInterface|ExpectsHigherOrderMessage
+     * @return Expectation|ExpectationInterface|ExpectsHigherOrderMessage|static
      */
     public function expects($something = null);
 }
